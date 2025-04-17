@@ -1,10 +1,10 @@
 <nav id="nav" style="background-color: #f4f4f4; padding: 1rem; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;">
     <div class="nav-links" style="display: flex; flex-wrap: wrap; gap: 1rem;">
       <a href="index_nomenclature.php" style="text-decoration: none; color: #222; padding: 0.5rem 1rem; border-radius: 5px;">Nomenclatures</a>
-      <a href="index_components.php" style="text-decoration: none; color: #222; padding: 0.5rem 1rem; border-radius: 5px;">Composants</a>
-      <a href="index_produits.php" style="text-decoration: none; color: #222; padding: 0.5rem 1rem; border-radius: 5px;">Produits</a>
-      <a href="update_produits.php" style="text-decoration: none; color: #222; padding: 0.5rem 1rem; border-radius: 5px;">Modifier Produits</a>
-      <a href="update_components.php" style="text-decoration: none; color: #222; padding: 0.5rem 1rem; border-radius: 5px;">Modifier Composants</a>
+      <a href="index_component.php" style="text-decoration: none; color: #222; padding: 0.5rem 1rem; border-radius: 5px;">Composants</a>
+      <a href="index_produit.php" style="text-decoration: none; color: #222; padding: 0.5rem 1rem; border-radius: 5px;">Produits</a>
+      <!-- <a href="update.php" style="text-decoration: none; color: #222; padding: 0.5rem 1rem; border-radius: 5px;">Modifier Produits</a>
+      <a href="update_components.php" style="text-decoration: none; color: #222; padding: 0.5rem 1rem; border-radius: 5px;">Modifier Composants</a> -->
     </div>
     <button onclick="toggleDarkMode()" style="background: none; border: 1px solid #222; color: #222; padding: 0.5rem 1rem; border-radius: 5px; cursor: pointer;">🌗 Mode</button>
   </nav>
