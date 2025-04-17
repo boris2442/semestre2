@@ -19,13 +19,13 @@ if (isset($_POST['update'])) {
         $libelle = clean_input($_POST['libelle']);
         $description = clean_input($_POST['description']);
 
-        // Vérification des longueurs
+       
         if (strlen($libelle) > 20) {
             $error = "Le libellé ne doit pas dépasser 20 caractères.";
         } elseif (strlen($description) > 200) {
             $error = "La description ne doit pas dépasser 200 caractères.";
         } else {
-            // Mise à jour dans la base de données
+       
             $sql = "UPDATE `produits` SET libelle = :libelle, description = :description WHERE id = :id";
             $requete = $db->prepare($sql);
             $requete->execute([
@@ -34,7 +34,7 @@ if (isset($_POST['update'])) {
                 "id" => $id
             ]);
 
-            // Redirection après mise à jour
+        
             header("Location: index_produit.php");
             exit();
         }

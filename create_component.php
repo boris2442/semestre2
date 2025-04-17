@@ -20,7 +20,7 @@ if ($_POST) {
     $description = clean_input($_POST['description']);
     $cout = clean_input(($_POST['cout']));
 
-    // if (empty($error)) {
+ 
     $sql = "INSERT INTO `composant` (libelle, description,cout) VALUES(:libelle, :description, :cout)";
     $requete = $db->prepare($sql);
     $requete->bindValue(':libelle', $libelle);
