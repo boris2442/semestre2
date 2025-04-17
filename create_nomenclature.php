@@ -51,6 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
 
 <body>
+ 
     <div>
         <button type="button" id="toggleMode">🌗 Changer de mode</button>
     </div>

@@ -52,6 +52,9 @@ $produits = $requete->fetchAll();
 </head>
 
 <body>
+<?php
+    require_once "functions/navbar.php"
+    ?>
     <h1>Listes des produits</h1>
 
     <table>

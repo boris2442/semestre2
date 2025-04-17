@@ -66,9 +66,8 @@ if (isset($_POST['update'])) {
 
         body {
             height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+          
+           
             background: #f5f7fa;
         }
 
@@ -78,6 +77,9 @@ if (isset($_POST['update'])) {
             padding: 30px;
             background: #ffffff;
             border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
 
@@ -143,6 +145,8 @@ if (isset($_POST['update'])) {
 </head>
 
 <body>
+<?php
+require_once "functions/navbar.php"?>
     <form method="post">
         <h1>Modifier un composant</h1>
         <?php if (!empty($error)) : ?>

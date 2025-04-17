@@ -48,10 +48,16 @@ $composants = $requete->fetchAll();
         .actions a {
             margin-right: 10px;
         }
+        button{
+            display: none;
+        }
     </style>
 </head>
 
 <body>
+<?php
+    require_once "functions/navbar.php"
+    ?>
     <h1>Listes des composants</h1>
 
     <table>

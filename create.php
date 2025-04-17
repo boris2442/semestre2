@@ -27,39 +27,6 @@ if ($_POST) {
 }
 ?>
 
-<!-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= $title ?? "semestre2" ?></title>
-  
-</head>
-
-<body>
-
-    <form method="post" class="">
-        <h1>Ajouter un produit </h1>
-        <div>
-            <label for="libelle">Entrer le libelle du produit</label>
-            <input type="text" id='libele' name="libelle">
-        </div>
-        <div>
-            <label for="description">Entrer la description du produit</label>
-            <textarea name="description" id="description"></textarea>
-        </div>
-        <div>
-            <input type="submit" value="Ajouter">
-        </div>
-
-
-        <div><a href="index_produit.php" >retourner a la liste de produits</a> </div>
-    </form>
-</body>
-
-</html> -->
-
 
 
 
@@ -89,9 +56,7 @@ if ($_POST) {
         body {
             background-color: #f5f7fa;
             min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            
         }
 
         form {
@@ -104,6 +69,7 @@ if ($_POST) {
             display: flex;
             flex-direction: column;
             gap: 15px;
+            margin: 0 auto;
         }
 
         h1 {
@@ -157,7 +123,9 @@ if ($_POST) {
 </head>
 
 <body>
-
+<?php
+    require_once "functions/navbar.php"
+    ?>
     <form method="post">
         <h1>Ajouter un produit</h1>
         <div>

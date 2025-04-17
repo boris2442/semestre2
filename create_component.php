@@ -56,9 +56,8 @@ if ($_POST) {
 
         body {
             height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+           
+            
             background: #f5f7fa;
         }
 
@@ -66,6 +65,10 @@ if ($_POST) {
             width: 100%;
             max-width: 420px;
             padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+           margin: 0 auto;
             background: #ffffff;
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -126,6 +129,9 @@ if ($_POST) {
 </head>
 
 <body>
+    <?php
+    require_once "functions/navbar.php"
+    ?>
 
     <form method="post">
         <h1>Ajouter un composant</h1>
@@ -148,10 +154,11 @@ if ($_POST) {
         <div>
             <input type="submit" value="Envoyer">
         </div>
-    </form>
-    <div>
+        <div>
         <a href="index_component.php">← Retour à la liste des produits</a>
     </div>
+    </form>
+   
 
 </body>
 
